@@ -6,7 +6,7 @@ using UnityEngineInternal;
 [System.Serializable]
 public struct Point
 {
-    public int x, y;
+    public int x, y; //we use y but it is the z position because of the way unity is
 
     public Point(int x, int y)
     {
