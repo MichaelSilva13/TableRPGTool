@@ -5,11 +5,6 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
 
-	private List<Vector3> tiles;
-	public List<Vector3> Tiles
-	{
-		get { return tiles; }
-		set { tiles = value; }
-	}
-
+	public List<Vector3> tiles;
+	
 }
