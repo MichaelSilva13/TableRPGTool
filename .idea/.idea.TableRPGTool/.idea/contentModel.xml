@@ -30,6 +30,24 @@
               <e p="Tweener.cs" t="Include" />
               <e p="Vector3Tweener.cs" t="Include" />
             </e>
+            <e p="StateMachine" t="Include">
+              <e p="BattleController.cs" t="Include" />
+              <e p="StateMachine.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="BattleStates" t="Include">
+                  <e p="BattleState.cs" t="Include" />
+                  <e p="InitBattleState.cs" t="Include" />
+                  <e p="MoveTargetState.cs" t="Include" />
+                </e>
+                <e p="State.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Controller" t="Include">
+            <e p="InputController.cs" t="Include" />
+          </e>
+          <e p="EventArgs" t="Include">
+            <e p="InfoEventArgs.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
             <e p="LevelData.cs" t="Include" />
@@ -39,6 +57,8 @@
             <e p="BoardCreator.cs" t="Include" />
           </e>
           <e p="ViewModelComponent" t="Include">
+            <e p="Board.cs" t="Include" />
+            <e p="CameraRig.cs" t="Include" />
             <e p="Tile.cs" t="Include" />
           </e>
         </e>
