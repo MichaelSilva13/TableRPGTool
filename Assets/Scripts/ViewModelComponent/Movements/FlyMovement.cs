@@ -9,8 +9,8 @@ public class FlyMovement : Movement
 		unit.Place(tile);
 		// Fly high enough not to clip through any ground tiles
 		float y = Tile.STEP_HEIGHT * 10;
-		float duration = (y - jumper.position.y) * 0.5f;
-		Tweener tweener = jumper.MoveToLocal(new Vector3(0, y, 0), duration, EasingEquations.EaseInOutQuad);
+		float duration = (y - transform.position.y) * 0.5f;
+		Tweener tweener = transform.MoveToLocal(new Vector3(transform.position.x, y, transform.position.z), duration, EasingEquations.EaseInOutQuad);
 		while (tweener != null)
 			yield return null;
 		// Turn to face the general direction

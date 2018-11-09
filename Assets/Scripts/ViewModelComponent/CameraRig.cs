@@ -20,4 +20,20 @@ public class CameraRig : MonoBehaviour
 			transform.position = Vector3.Lerp(transform.position, follow.position, speed * Time.deltaTime);
 		}
 	}
+
+	public void rotate(int dir)
+	{
+		StartCoroutine(turnCamera(dir));
+	}
+	
+
+	IEnumerator turnCamera(int direction)
+	{
+		Vector3 rot = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
+		rot.y += direction * 90;
+		float duration = (rot.y - transform.eulerAngles.y) * 0.5f;
+		Tweener tweener = transform.RotateToLocal(rot, 1f, EasingEquations.EaseInOutQuad);
+		while (tweener != null)
+			yield return null;
+	}
 }

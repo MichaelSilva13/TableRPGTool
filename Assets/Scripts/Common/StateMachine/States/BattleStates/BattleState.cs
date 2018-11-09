@@ -6,6 +6,8 @@ public class BattleState : State
 {
 
 	protected BattleController owner;
+
+	protected float EPSILON = 0.05f;
 	
 	public CameraRig cameraRig
 	{
@@ -22,6 +24,20 @@ public class BattleState : State
 	private void Awake()
 	{
 		owner = GetComponent<BattleController>();
+	}
+	
+	protected int round(float f)
+	{
+		if (f >= EPSILON)
+		{
+			return Mathf.CeilToInt(f);
+		}
+		if(f <= -EPSILON)
+		{
+			return Mathf.FloorToInt(f);
+		}
+
+		return 0;
 	}
 	
 	protected override void AddListeners ()
