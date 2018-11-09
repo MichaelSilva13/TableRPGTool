@@ -37,7 +37,9 @@
                 <e p="BattleStates" t="Include">
                   <e p="BattleState.cs" t="Include" />
                   <e p="InitBattleState.cs" t="Include" />
+                  <e p="MoveSequenceState.cs" t="Include" />
                   <e p="MoveTargetState.cs" t="Include" />
+                  <e p="SelectUnitState.cs" t="Include" />
                 </e>
                 <e p="State.cs" t="Include" />
               </e>
@@ -46,8 +48,14 @@
           <e p="Controller" t="Include">
             <e p="InputController.cs" t="Include" />
           </e>
+          <e p="Enums" t="Include">
+            <e p="Directions.cs" t="Include" />
+          </e>
           <e p="EventArgs" t="Include">
             <e p="InfoEventArgs.cs" t="Include" />
+          </e>
+          <e p="Extensions" t="Include">
+            <e p="DirectionsExtensions.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
             <e p="LevelData.cs" t="Include" />
@@ -56,9 +64,18 @@
           <e p="Pre Production" t="Include">
             <e p="BoardCreator.cs" t="Include" />
           </e>
+          <e p="Units" t="Include">
+            <e p="Unit.cs" t="Include" />
+          </e>
           <e p="ViewModelComponent" t="Include">
             <e p="Board.cs" t="Include" />
             <e p="CameraRig.cs" t="Include" />
+            <e p="Movements" t="Include">
+              <e p="FlyMovement.cs" t="Include" />
+              <e p="Movement.cs" t="Include" />
+              <e p="TeleportMovement.cs" t="Include" />
+              <e p="WalkMovement.cs" t="Include" />
+            </e>
             <e p="Tile.cs" t="Include" />
           </e>
         </e>

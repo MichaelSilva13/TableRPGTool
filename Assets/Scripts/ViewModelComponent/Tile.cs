@@ -5,11 +5,17 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
 
+	[HideInInspector] public Tile prev;
+	[HideInInspector] public int distance;
+	
 	public const float STEP_HEIGHT = 0.25f; //Height by wich it will be multiplied to set the height
 
 	public Point pos; //Position of the Tile
 
 	public int height; //Height of the Tile
+
+	public GameObject content;
+	
 	
 	//Center of the Tile
 	public Vector3 center

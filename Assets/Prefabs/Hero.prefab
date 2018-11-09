@@ -73,6 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4903821027253772}
+  - component: {fileID: 114478096639515978}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -275,6 +276,18 @@ MeshCollider:
   m_CookingOptions: -2
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3d02206934c1b4ab6a60756b57202011, type: 3}
+--- !u!114 &114478096639515978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717107123246400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2d6d120d8e24babaed39c9e64b1505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dir: 0
 --- !u!135 &135463145943746992
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -67,15 +67,24 @@
     <Compile Include="Assets\Scripts\Common\StateMachine\StateMachine.cs" />
     <Compile Include="Assets\Scripts\Common\StateMachine\States\BattleStates\BattleState.cs" />
     <Compile Include="Assets\Scripts\Common\StateMachine\States\BattleStates\InitBattleState.cs" />
+    <Compile Include="Assets\Scripts\Common\StateMachine\States\BattleStates\MoveSequenceState.cs" />
     <Compile Include="Assets\Scripts\Common\StateMachine\States\BattleStates\MoveTargetState.cs" />
+    <Compile Include="Assets\Scripts\Common\StateMachine\States\BattleStates\SelectUnitState.cs" />
     <Compile Include="Assets\Scripts\Common\StateMachine\States\State.cs" />
     <Compile Include="Assets\Scripts\Controller\InputController.cs" />
+    <Compile Include="Assets\Scripts\Enums\Directions.cs" />
     <Compile Include="Assets\Scripts\EventArgs\InfoEventArgs.cs" />
+    <Compile Include="Assets\Scripts\Extensions\DirectionsExtensions.cs" />
     <Compile Include="Assets\Scripts\Model\LevelData.cs" />
     <Compile Include="Assets\Scripts\Model\Point.cs" />
     <Compile Include="Assets\Scripts\Pre Production\BoardCreator.cs" />
+    <Compile Include="Assets\Scripts\Units\Unit.cs" />
     <Compile Include="Assets\Scripts\ViewModelComponent\Board.cs" />
     <Compile Include="Assets\Scripts\ViewModelComponent\CameraRig.cs" />
+    <Compile Include="Assets\Scripts\ViewModelComponent\Movements\FlyMovement.cs" />
+    <Compile Include="Assets\Scripts\ViewModelComponent\Movements\Movement.cs" />
+    <Compile Include="Assets\Scripts\ViewModelComponent\Movements\TeleportMovement.cs" />
+    <Compile Include="Assets\Scripts\ViewModelComponent\Movements\WalkMovement.cs" />
     <Compile Include="Assets\Scripts\ViewModelComponent\Tile.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/MichaelS/TableRPGTool/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
