@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_TableRPGTool.-2117678570.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\Michael\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Michael\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_TableRPGTool.2139511035.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Michael\Documents\TRPG\TableRPGTool" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="BoardCreatorInspector.cs" t="Include" />
         </e>
-        <e p="Plugins" t="Include">
-          <e p="Editor" t="Include">
-            <e p="JetBrains" t="Include">
-              <e p="Unity3DRider.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="Common" t="Include">
             <e p="Animation" t="Include">
               <e p="EasingControl.cs" t="Include" />
               <e p="EasingEquations.cs" t="Include" />
+              <e p="RectTransformAnimationExtension.cs" t="Include" />
+              <e p="RectTransformAnimiationTweener.cs" t="Include" />
               <e p="TransformAnimationExtensions.cs" t="Include" />
               <e p="TransformLocalEulerTweener.cs" t="Include" />
               <e p="TransformLocalPositionTweener.cs" t="Include" />
@@ -29,6 +24,10 @@
               <e p="TransformScaleTweener.cs" t="Include" />
               <e p="Tweener.cs" t="Include" />
               <e p="Vector3Tweener.cs" t="Include" />
+            </e>
+            <e p="Object Pooler" t="Include">
+              <e p="GameObjectPoolController.cs" t="Include" />
+              <e p="Poolable.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
               <e p="BattleController.cs" t="Include" />
@@ -43,6 +42,10 @@
                 </e>
                 <e p="State.cs" t="Include" />
               </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="LayoutAnchor.cs" t="Include" />
+              <e p="Panel.cs" t="Include" />
             </e>
           </e>
           <e p="Controller" t="Include">
@@ -78,6 +81,10 @@
             </e>
             <e p="Tile.cs" t="Include" />
           </e>
+        </e>
+        <e p="Temp" t="Include">
+          <e p="AnchorTest.cs" t="Include" />
+          <e p="PanelTests.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
