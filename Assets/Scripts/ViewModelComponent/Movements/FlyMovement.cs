@@ -9,7 +9,7 @@ public class FlyMovement : Movement
 		unit.Place(tile);
 		// Fly high enough not to clip through any ground tiles
 		float y = Tile.STEP_HEIGHT * 10;
-		float duration = (y - transform.position.y) * 0.5f;
+		float duration = (y - transform.position.y) * 0.25f;
 		Tweener tweener = transform.MoveToLocal(new Vector3(transform.position.x, y, transform.position.z), duration, EasingEquations.EaseInOutQuad);
 		while (tweener != null)
 			yield return null;
@@ -22,13 +22,13 @@ public class FlyMovement : Movement
 			dir = toTile.z > 0 ? Directions.NORTH : Directions.SOUTH;
 		yield return StartCoroutine(Turn(dir));
 		// Move to the correct position
-		duration = dist * 0.5f;
+		duration = dist * 0.25f;
 		tweener = transform.MoveTo(tile.center, duration, EasingEquations.EaseInOutQuad);
 		while (tweener != null)
 			yield return null;
 		// Land
-		duration = (y - tile.center.y) * 0.5f;
-		tweener = jumper.MoveToLocal(Vector3.zero, 0.5f, EasingEquations.EaseInOutQuad);
+		duration = (y - tile.center.y) * 0.25f;
+		tweener = jumper.MoveToLocal(Vector3.zero, 0.25f, EasingEquations.EaseInOutQuad);
 		while (tweener != null)
 			yield return null;
 	}

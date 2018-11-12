@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 4679265124186628}
   - component: {fileID: 33336071307703100}
   - component: {fileID: 23963152454813386}
-  - component: {fileID: 64070250407184872}
   m_Layer: 0
   m_Name: HeroMesh
   m_TagString: Untagged
@@ -291,20 +290,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1393627088862640}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64070250407184872
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1417256565470516}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: -2
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 3d02206934c1b4ab6a60756b57202011, type: 3}
 --- !u!114 &114478096639515978
 MonoBehaviour:
   m_ObjectHideFlags: 1

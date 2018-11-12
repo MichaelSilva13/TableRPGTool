@@ -31,7 +31,7 @@ public class InitBattleState : BattleState {
 			unit.Place(board.GetTile(p));
 			unit.Match();
 			Movement m = instance.AddComponent(components[i]) as Movement;
-			m.range = 5;
+			m.range = 6;
 			m.jumpHeight = 1;
 		}
 	}

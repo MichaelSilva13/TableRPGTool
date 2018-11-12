@@ -24,11 +24,6 @@ public class SelectUnitState : BattleState {
 		Debug.Log(e.Info + " " + input);
 		SelectTile(e.Info + pos);
 	}
-	
-	protected override void OnCameraMove(object sender, InfoEventArgs<float> e)
-	{
-		cameraRig.rotate((int)e.Info*-1);
-	}
   
 	protected override void OnFire (object sender, InfoEventArgs<int> e)
 	{

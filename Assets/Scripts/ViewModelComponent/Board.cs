@@ -15,8 +15,8 @@ public class Board : MonoBehaviour
 		new Point(1, 0),
 		new Point(-1, 0)
 	};
-	Color selectedTileColor = new Color(0, 1, 1, 1);
-	Color defaultTileColor = new Color(1, 1, 1, 1);
+	Color selectedTileColor = new Color(0, 0.7f, 1, 1);
+	Color defaultTileColor = new Color(0.63f, 0.63f, 0.63f, 1);
 	#endregion
 
 	#region Public

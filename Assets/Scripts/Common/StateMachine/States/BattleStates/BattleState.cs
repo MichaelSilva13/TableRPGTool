@@ -67,7 +67,7 @@ public class BattleState : State
 
 	protected virtual void OnCameraMove(object sender, InfoEventArgs<float> e)
 	{
-		
+		cameraRig.rotate((int)e.Info*-1);
 	}
 	
 	protected virtual void SelectTile (Point p)

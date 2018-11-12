@@ -20,10 +20,6 @@ public class MoveTargetState : BattleState
 		tiles = null;
 	}
 
-	protected override void OnCameraMove(object sender, InfoEventArgs<float> e)
-	{
-		cameraRig.rotate((int)e.Info*-1);
-	}
 
 	protected override void OnMove (object sender, InfoEventArgs<Point> e)
 	{

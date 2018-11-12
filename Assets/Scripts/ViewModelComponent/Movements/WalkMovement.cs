@@ -56,7 +56,7 @@ public class WalkMovement : Movement {
 	
 	IEnumerator Walk (Tile target)
 	{
-		Tweener tweener = transform.MoveTo(target.center, 0.5f, EasingEquations.Linear);
+		Tweener tweener = transform.MoveTo(target.center, 0.25f, EasingEquations.Linear);
 		while (tweener != null)
 			yield return null;
 	}
@@ -64,8 +64,8 @@ public class WalkMovement : Movement {
 	IEnumerator Jump (Tile to)
 	{
 		Debug.Log(to.center);
-		Tweener tweener = transform.MoveTo(to.center, 0.5f, EasingEquations.Linear);
-		Tweener t2 = jumper.MoveToLocal(new Vector3(0, Tile.STEP_HEIGHT * 2f, 0), tweener.easingControl.duration / 2f, EasingEquations.EaseOutQuad);
+		Tweener tweener = transform.MoveTo(to.center, 1f, EasingEquations.EaseOutQuad);
+		Tweener t2 = jumper.MoveToLocal(new Vector3(0, Tile.STEP_HEIGHT * 10f, 0), tweener.easingControl.duration / 1f, EasingEquations.EaseOutCirc);
 		t2.easingControl.loopCount = 1;
 		t2.easingControl.loopType = EasingControl.LoopType.PingPong;
 		while (tweener != null)
