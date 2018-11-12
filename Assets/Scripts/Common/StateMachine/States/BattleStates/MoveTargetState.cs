@@ -20,6 +20,22 @@ public class MoveTargetState : BattleState
 		tiles = null;
 	}
 
+	protected override void OnMouseMove(object sender, InfoEventArgs<Vector3> e)
+	{
+
+		Ray ray;
+		RaycastHit hit;
+
+		ray = Camera.main.ScreenPointToRay(e.Info);
+		if (Physics.Raycast(ray, out hit))
+		{
+			Tile t = hit.collider.gameObject.GetComponent<Tile>();
+			if (t != null)
+			{
+				SelectTile(t.pos);
+			}
+		}
+	}
 
 	protected override void OnMove (object sender, InfoEventArgs<Point> e)
 	{

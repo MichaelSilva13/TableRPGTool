@@ -24,6 +24,23 @@ public class SelectUnitState : BattleState {
 		Debug.Log(e.Info + " " + input);
 		SelectTile(e.Info + pos);
 	}
+	
+	protected override void OnMouseMove(object sender, InfoEventArgs<Vector3> e)
+	{
+
+		Ray ray;
+		RaycastHit hit;
+
+		ray = Camera.main.ScreenPointToRay(e.Info);
+		if (Physics.Raycast(ray, out hit))
+		{
+			Tile t = hit.collider.gameObject.GetComponent<Tile>();
+			if (t != null)
+			{
+				SelectTile(t.pos);
+			}
+		}
+	}
   
 	protected override void OnFire (object sender, InfoEventArgs<int> e)
 	{

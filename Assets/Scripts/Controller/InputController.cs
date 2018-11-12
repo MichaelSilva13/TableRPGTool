@@ -14,6 +14,8 @@ public class InputController : MonoBehaviour {
 	public static EventHandler<InfoEventArgs<Point>> moveEvent;
 	public static EventHandler<InfoEventArgs<int>> fireEvent;
 	public static EventHandler<InfoEventArgs<float>> camreaTurnEvent;
+	public static EventHandler<InfoEventArgs<Vector3>> mouseMoveEvent;
+
 	
 	private const float EPSILON = 0.001f;
 
@@ -45,6 +47,14 @@ public class InputController : MonoBehaviour {
 				camreaTurnEvent(this, new InfoEventArgs<float>(1f));
 			}
 			
+		}
+
+		if (Input.GetAxisRaw("Mouse X") > 0 || Input.GetAxisRaw("Mouse Y") > 0)
+		{
+			if (mouseMoveEvent!=null)
+			{
+				mouseMoveEvent(this, new InfoEventArgs<Vector3>(Input.mousePosition));
+			}
 		}
 
 		if (x != 0 || y != 0)

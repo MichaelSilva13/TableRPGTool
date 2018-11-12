@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class BattleState : State
 {
@@ -45,15 +46,24 @@ public class BattleState : State
 		InputController.moveEvent += OnMove;
 		InputController.fireEvent += OnFire;
 		InputController.camreaTurnEvent += OnCameraMove;
+		InputController.mouseMoveEvent += OnMouseMove;
 
 	}
-  
+
 	protected override void RemoveListeners ()
 	{
 		InputController.moveEvent -= OnMove;
 		InputController.fireEvent -= OnFire;
 		InputController.camreaTurnEvent -= OnCameraMove;
+		InputController.mouseMoveEvent -= OnMouseMove;
 	}
+	
+	protected virtual void OnMouseMove(object sender, InfoEventArgs<Vector3> e)
+	{
+		
+	}
+
+	
 	
 	protected virtual void OnMove (object sender, InfoEventArgs<Point> e)
 	{
